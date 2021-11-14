@@ -7,7 +7,7 @@ import LoginImg from '../../../images/Login.jpg';
 const Register = () => {
     const [loginData, setLoginData] = useState({});
     const history = useHistory();
-    const { user, registerUser, isLoading, authError } = useAuth;
+    const { user, registerUser, isLoading, authError } = useAuth();
 
     const handleOnBlur = e => {
         const field = e.target.name;

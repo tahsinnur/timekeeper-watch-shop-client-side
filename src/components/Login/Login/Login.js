@@ -12,7 +12,7 @@ const Login = () => {
     const location = useLocation();
     const history = useHistory();
 
-    const handleOnChange = e => {
+    const handleOnBlur = e => {
         const field = e.target.name;
         const value = e.target.value;
         const newLoginData = { ...loginData };
@@ -37,11 +37,11 @@ const Login = () => {
                     <form className="text-start" onSubmit={handleLoginSubmit}>
                         <div class="mb-3">
                             <label className="form-label">Email address</label>
-                            <input type="email" className="form-control w-75 py-2" placeholder="Your Email" onChange={handleOnChange} />
+                            <input type="email" name="email" className="form-control w-75 py-2" placeholder="Your Email" onChange={handleOnBlur} />
                         </div>
                         <div class="mb-3">
                             <label className="form-label">Password</label>
-                            <input type="password" className="form-control w-75 py-2" placeholder="Your Password" onChange={handleOnChange} />
+                            <input type="password" name="password" className="form-control w-75 py-2" placeholder="Your Password" onChange={handleOnBlur} />
                         </div>
                         <div>
                             <button type="submit" className="btn text-white mb-3" style={{ backgroundColor: "rgba(4, 9, 30, 0.9)" }}>Login</button>
