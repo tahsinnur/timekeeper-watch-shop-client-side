@@ -19,10 +19,10 @@ import Review from '../Review/Review';
 const Dashboard = () => {
     let { path, url } = useRouteMatch();
 
-    const { admin } = useAuth();
+    const { admin, logOut } = useAuth();
 
     return (
-        <Container style={{ height: "90vh" }}>
+        <Container>
             <h2 className="pt-5 pb-4">Welcome To Dashboard</h2>
             <div>
                 {
@@ -42,6 +42,7 @@ const Dashboard = () => {
                         <Link style={{ textDecoration: "none", color: "white" }} to={`${url}/addAProduct`}>
                             <button className="btn text-white me-3 mb-3" style={{ backgroundColor: "rgba(4, 9, 30, 0.9)" }}>Add A Product</button>
                         </Link>
+                        <button onClick={logOut} className="btn text-white me-3 mb-3" style={{ backgroundColor: "rgba(4, 9, 30, 0.9)" }}>Logout</button>
                     </div>
                 }
 
@@ -59,8 +60,10 @@ const Dashboard = () => {
                         <Link style={{ textDecoration: "none", color: "white" }} to={`${url}/review`}>
                             <button className="btn text-white me-3 mb-3" style={{ backgroundColor: "rgba(4, 9, 30, 0.9)" }}>Give Review</button>
                         </Link>
+                        <button onClick={logOut} className="btn text-white me-3 mb-3" style={{ backgroundColor: "rgba(4, 9, 30, 0.9)" }}>Logout</button>
                     </div>
                 }
+                
 
             </div>
             <div>

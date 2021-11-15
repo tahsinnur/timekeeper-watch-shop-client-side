@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Timekeeper A React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project created by Tahsin Nur [Timekeeper APP](https://travelicious-travels.web.app/).
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+In this project:
 
-### `npm start`
+### `Single Product Type Website`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Trying Build up a online watch shop website and their services.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `Online Purchase System`
 
-### `npm test`
+* There are various types of watches and brands you can choose from 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Login System`
 
-### `npm run build`
+* Email Password Registration, Login And Google login system introduced in this website
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Private Route`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* You can purchase any watch if you are logged in otherwise you can't
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `Dashboad`
 
-### `npm run eject`
+* You can see all your orders in dashboard. You can delete/cancle your order. You can give review also from dashboard
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `Admin`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Admin user also introduced. Admin can see different things in dashboard like Manage All Orders, Manage Products, Add A New Product etc. An Admin Also can make a user admin.

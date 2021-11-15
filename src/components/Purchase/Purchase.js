@@ -7,7 +7,7 @@ const Purchase = () => {
     const { productId } = useParams();
     const { user } = useAuth();
     const [productInfo, setProductInfo] = useState({});
-    const initialInfo = { userName: user.displayName, email: user.email, phone: '', address: '' };
+    const initialInfo = { userName: user.displayName, email: user.email, phone: '', address: '', status: 'pending' };
     const [purchaseInfo, setPurchaseInfo] = useState(initialInfo);
 
     const history = useHistory();
@@ -62,28 +62,28 @@ const Purchase = () => {
                 </div>
                 <div className="ps-5">
                     <form onSubmit={handlePurchaseSubmit}>
-                        <div class="mb-3 text-start">
+                        <div className="mb-3 text-start">
                             <label className="form-label">Product Name</label>
                             <input disabled className="form-control w-75 py-2" defaultValue={productInfo.name} name="productName" />
                         </div>
-                        <div class="mb-3 text-start">
+                        <div className="mb-3 text-start">
                             <label className="form-label">Product Price</label>
                             <input disabled className="form-control w-75 py-2" defaultValue={productInfo.price} name="productPrice" />
                         </div>
-                        <div class="mb-3 text-start">
+                        <div className="mb-3 text-start">
                             <label className="form-label">User Name</label>
                             <input disabled className="form-control w-75 py-2" defaultValue={user.displayName}
                                 name="userName" />
                         </div>
-                        <div class="mb-3 text-start">
+                        <div className="mb-3 text-start">
                             <label className="form-label">Email</label>
                             <input disabled className="form-control w-75 py-2" defaultValue={user.email} name="email" />
                         </div>
-                        <div class="mb-3 text-start">
+                        <div className="mb-3 text-start">
                             <label className="form-label">Phone</label>
                             <input required type="number" className="form-control w-75 py-2" name="phone" onBlur={handleOnBlur} />
                         </div>
-                        <div class="mb-3 text-start">
+                        <div className="mb-3 text-start">
                             <label className="form-label">Address</label>
                             <input required type="text" className="form-control w-75 py-2" name="address" onBlur={handleOnBlur} />
                         </div>

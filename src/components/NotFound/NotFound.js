@@ -1,11 +1,12 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const NotFound = () => {
     return (
-        <div>
-            <h2>404</h2>
+        <Container className="mt-4">
+            <h1>404</h1>
             <p>Page not found</p>
-        </div>
+        </Container>
     );
 };
 

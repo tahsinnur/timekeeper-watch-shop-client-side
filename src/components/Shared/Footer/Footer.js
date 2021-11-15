@@ -16,6 +16,10 @@ const Footer = () => {
                     </div>
                     <div className="col text-start">
                         <h5 className="fw-bold">Newsletter</h5>
+                        <div>
+                            <input className="form-control" type="email" placeholder="Email" />
+                            <button style={{ backgroundColor: "white" }} class="btn mt-2">Subscribe</button>
+                        </div>
                     </div>
                     <div className="col text-start">
                         <h5 className="fw-bold">Follow Us</h5>
