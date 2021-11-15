@@ -5,7 +5,7 @@ const ManageAllOrders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/purchaseInfo')
+        fetch('https://morning-badlands-90985.herokuapp.com/purchaseInfo')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
@@ -13,7 +13,7 @@ const ManageAllOrders = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/purchaseInfo/${id}`
+            const url = `https://morning-badlands-90985.herokuapp.com/purchaseInfo/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -34,7 +34,7 @@ const ManageAllOrders = () => {
     const handleUpdate = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/purchaseInfo/${id}`
+            const url = `https://morning-badlands-90985.herokuapp.com/purchaseInfo/${id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {

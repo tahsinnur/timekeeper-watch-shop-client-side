@@ -13,7 +13,7 @@ const Purchase = () => {
     const history = useHistory();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://morning-badlands-90985.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProductInfo(data))
     }, [productId])
@@ -33,7 +33,7 @@ const Purchase = () => {
             price: productInfo.price
         }
 
-        fetch('http://localhost:5000/purchaseInfo', {
+        fetch('https://morning-badlands-90985.herokuapp.com/purchaseInfo', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -7,7 +7,7 @@ const MyOrders = () => {
     const {user} = useAuth();
 
     useEffect( () => {
-        fetch(`http://localhost:5000/purchaseInfo/user?email=${user.email}`)
+        fetch(`https://morning-badlands-90985.herokuapp.com/purchaseInfo/user?email=${user.email}`)
         .then(res => res.json())
         .then(data => setOrders(data))
     }, [user])
@@ -15,7 +15,7 @@ const MyOrders = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if(proceed){
-            const url = `http://localhost:5000/purchaseInfo/${id}`
+            const url = `https://morning-badlands-90985.herokuapp.com/purchaseInfo/${id}`
         fetch(url, {
             method: 'DELETE'
         })
